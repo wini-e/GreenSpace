@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Store</title>
+    <link rel="stylesheet" href="prod.css">
+    <link rel="stylesheet" href="e-commerce-project-master/css/layout/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+      <nav class="navbar">
+        
+          <div class="logo">Plant Haven</div>
+          <div class="search-container">
+            <input type="text" placeholder="Search">
+            <i class="fa fa-search"></i>
+          </div>
+          <div class="header-right-links">
+          
+            <svg  aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 5.365V3m0 2.365a5.338 5.338 0 0 1 5.133 5.368v1.8c0 2.386 1.867 2.982 1.867 4.175 0 .593 0 1.292-.538 1.292H5.538C5 18 5 17.301 5 16.708c0-1.193 1.867-1.789 1.867-4.175v-1.8A5.338 5.338 0 0 1 12 5.365ZM8.733 18c.094.852.306 1.54.944 2.112a3.48 3.48 0 0 0 4.646 0c.638-.572 1.236-1.26 1.33-2.112h-6.92Z"/>
+            </svg>
+            <span>0</span>
+
+            
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 10V6a3 3 0 0 1 3-3v0a3 3 0 0 1 3 3v4m3-2 .917 11.923A1 1 0 0 1 17.92 21H6.08a1 1 0 0 1-.997-1.077L6 8h12Z"/>
+
+            </svg>
+            <span>0</span>
+            
+            
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m4 12 8-8 8 8M6 10.5V19a1 1 0 0 0 1 1h3v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h3a1 1 0 0 0 1-1v-8.5"/>
+            </svg>
+            
+            
+          </div>
+          
+          
+          
+      </nav>
+  </header>
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="hero-heading">Rent lush, vibrant plants from Plant Haven
+        <p class="hero-subheading">
+          Explore Plant Haven’s vibrant collection of lush, handpicked plants for every space.
+        </p>
+      </div>
+    
+    </section>
+    
+
+    <!-- Filter and Product Grid -->
+    <!-- Filter and Product Grid -->
+<section class="main-content">
+    <div class="filters">
+        <h3>Filter By</h3>
+        <select id="categoryFilter">
+            <option value="all">All Categories</option>
+            <option value="potted">Potted Plants</option>
+            <option value="trees">Trees</option>
+        </select>
+        
+        <select id="sortBy">
+            <option value="default">Sort By</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+            <option value="name-asc">Name: A to Z</option>
+            <option value="name-desc">Name: Z to A</option>
+            <option value="popularity">Sort by Popularity</option>
+            <option value="rating">Sort by Rating</option>
+        </select>
+
+        <select id="allin">
+          <option value="in">Indoor Plants</option>
+          <option value="desk">Desk Plants</option>
+          <option value="hang">Hanging Plants</option>
+          <option value="floor">Floor Plants</option>
+          <option value="shelf">Shelf-friendly Plants</option>
+      </select>
+
+      <select id="alleve">
+          <option value="events">Events & Decor</option>
+          <option value="wed">Weddings</option>
+          <option value="cor">Corporate Events</option>
+          <option value="photo">Photoshoots</option>
+          <option value="parties">Parties & Celebrations</option>
+      </select>
+
+      <select id="allout">
+          <option value="out">Outdoor Plants</option>
+          <option value="shrubs">Garden Shrubs</option>
+          <option value="patio">Patio Plants</option>
+          <option value="flower">Flowering Plants</option>
+          <option value="small">Small Trees</option>
+       </select>
+
+      <select id="allbene">
+          <option value="bene">Beneficial Plants</option>
+          <option value="vaastu">Vaastu Plants</option>
+          <option value="med">Medicinal Plants</option>
+          <option value="air">Air Purifiers</option>
+          <option value="stress">Stress-relieving Plants</option>
+          <option value="pet">Pet-friendly Plants</option>
+          <option value="low">Low-light Plants</option>
+       </select>
+        
+        
+    </div>
+
+    <div class="product-grid">
+        <!-- Dynamic content will be rendered here by JavaScript -->
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    
+<!--
+  FOOTER
+-->
+<footer>
+
+    <section class="footer" color: black;>
+        <style>
+            body{
+                text-decoration-color: black;
+            }
+        </style>
+      <div class="widgets-row">
+        <div class="container">
+          <div class="footer-widgets">
+            <div class="brand-info">
+              <div class="footer-logo">
+                <a href="/" class="logo">LOGO</a>
+              </div>
+              <div class="footer-desc" >
+               FOOTER DESCRIPTION OF OUR WEBSITE AND SERVICE
+              </div>
+              <div class="footer-contact">
+                <p>
+                  <a href="tel:123456789">(+120) 1234 5678 91</a> -
+                  <a href="mailto:info@example.com">hello@gmail.com</a>
+                </p>
+              </div>
+            </div>
+            <div class="widget-nav-menu">
+              <h4>Information</h4>
+              <ul class="menu-list">
+                <li>
+                  <a href="#">About Us</a>
+                </li>
+                <li>
+                  <a href="#">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="#">Returns Policy</a>
+                </li>
+                <li>
+                  <a href="#">Shipping Policy</a>
+                </li>
+                <li>
+                  <a href="#">Credits</a>
+                </li>
+                
+              </ul>
+            </div>
+            <div class="widget-nav-menu">
+              <h4>Account</h4>
+              <ul class="menu-list">
+                <li>
+                  <a href="#">Dashboard</a>
+                </li>
+                <li>
+                  <a href="#">My Orders</a>
+                </li>
+                <li>
+                  <a href="#">My Wishlist</a>
+                </li>
+                <li>
+                  <a href="#">Account details</a>
+                </li>
+                <li>
+                  <a href="#">Track My Orders</a>
+                </li>
+              </ul>
+            </div>
+            <div class="widget-nav-menu">
+              <h4>Shop</h4>
+              <ul class="menu-list">
+                <li>
+                  <a href="#">Affiliated NURSERIES</a>
+                </li>
+                <li>
+                  <a href="#">Bestsellers</a>
+                </li>
+                <li>
+                  <a href="#">Special offers</a>
+                </li>
+                <li>
+                  <a href="#">Latest Products</a>
+                </li>
+                <li>
+                  <a href="#">Sale Products</a>
+                </li>
+              </ul>
+            </div>
+            <div class="widget-nav-menu">
+              <h4>Special Features</h4>
+              <ul class="menu-list">
+                <li>
+                  <a href="#">DECOR IDEAS/INSPO</a>
+                </li>
+                <li>
+                  <a href="#">CARE TIPS 
+                              MAINTAINANCE</a>
+                </li>
+                
+                <li>
+                  <a href="#">SUBSCRIPTION PLANS</a>
+                </li>
+                <li>
+                  <a href="#">AFFILATED NURSERIES</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-row">
+        <div class="copyright-row">
+          <div class="container">
+            <div class="footer-copyright">
+              <div class="site-copyright">
+                <p>
+                  Copyright 2024© . All right reserved.
+                  Powered By group12.
+                </p>
+              </div>
+              <a href="#">
+                <img src="img/footer/cards.png" alt="">
+              </a>
+              <div class="footer-menu">
+                <ul class="footer-menu-list">
+                  <li class="list-item">
+                    <a href="#">Privacy Policy</a>
+                  </li>
+                  <li class="list-item">
+                    <a href="#">Terms and Conditions</a>
+                  </li>
+                  <li class="list-item">
+                    <a href="#">Returns Policy</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ! footer end -->
+  
+  </footer>
+
+    <script src="prod.js"></script>
+</body>
+</html>
