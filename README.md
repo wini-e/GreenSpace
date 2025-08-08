@@ -21,9 +21,9 @@ Enjoy Your Plants – Plants are delivered fresh and ready to display.
 Return or Renew – Keep them longer or return them hassle-free.
 
 <img width="1366" height="653" alt="gs1" src="https://github.com/user-attachments/assets/2445961e-1c95-41ee-b02a-572caa6a1234" />
-<img width="1032" height="459" alt="gs6" src="https://github.com/user-attachments/assets/5d4d7f1f-803a-4793-82ff-901ed14c927b" />
+<img width="881" height="495" alt="gs2" src="https://github.com/user-attachments/assets/a97056be-d0c0-4f04-82b9-4677aa25436b" />
 <img width="1025" height="459" alt="gs5" src="https://github.com/user-attachments/assets/8a0bc083-4072-496e-ae83-fb46d7ad4ff9" />
 <img width="1019" height="459" alt="gs4" src="https://github.com/user-attachments/assets/b55b541b-7dbe-43a3-bf6c-fc7ce6f7038b" />
 <img width="888" height="493" alt="gs3" src="https://github.com/user-attachments/assets/a6d88209-47ec-4d55-b3cd-7502644ec0f2" />
-<img width="881" height="495" alt="gs2" src="https://github.com/user-attachments/assets/a97056be-d0c0-4f04-82b9-4677aa25436b" />
+<img width="1032" height="459" alt="gs6" src="https://github.com/user-attachments/assets/5d4d7f1f-803a-4793-82ff-901ed14c927b" />
 
