@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peace Lily Features</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+
+    .product-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 20px auto;
+      width: 90%;
+      max-width: 900px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-image {
+      flex: 1;
+      margin-right: 20px;
+    }
+
+    .product-image img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    .product-info {
+      flex: 2;
+      overflow-y: auto;
+      max-height: 400px;
+    }
+
+    .product-info h3 {
+      font-size: 1.5rem;
+      color: #333;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #76c893;
+      padding-bottom: 5px;
+    }
+
+    .features-list {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .features-list li {
+      padding: 10px 0;
+      border-bottom: 1px solid #ddd;
+      font-size: 1rem;
+    }
+
+    .features-list li:last-child {
+      border-bottom: none;
+    }
+
+    .features-list .highlight {
+      font-weight: bold;
+      color: #007600;
+      background-color: #f0fff4;
+      padding: 5px 10px;
+      border-radius: 4px;
+      margin-top: 5px;
+    }
+
+    .price {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-top: 15px;
+      color: #333;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      width: 100%;
+    }
+
+    .buttons button {
+      background-color: #76c893;
+      color: #fff;
+      border: none;
+      padding: 15px 20px;
+      font-size: 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 48%;
+      min-width: 150px;
+    }
+
+    .buttons button:hover {
+      background-color: #5fa47e;
+    }
+
+    footer {
+      text-align: center;
+      margin: 20px 0;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    #pincode-checker {
+      margin: 20px auto;
+      width: 90%;
+      max-width: 600px;
+      text-align: center;
+      background-color: #fff;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    #pincode-checker input {
+      width: calc(100% - 50px);
+      padding: 10px;
+      margin: 10px 0;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    #pincode-checker button {
+      background-color: #76c893;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    #pincode-checker button:hover {
+      background-color: #5fa47e;
+    }
+
+    #pincode-result {
+      margin-top: 15px;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="product-container">
+    <div class="product-image">
+      <img src="https://via.placeholder.com/300" alt="Peace Lily Plant Image">
+    </div>
+    <div class="product-info">
+      <h3>Peace Lily Plant Features</h3>
+      <ul class="features-list">
+        <li><strong>Plant or Animal Product Type:</strong> Peace Lily</li>
+        <li><strong>Indoor/Outdoor Usage:</strong> Indoor</li>
+        <li><strong>Brand:</strong> Nature's Touch</li>
+        <li><strong>Material Feature:</strong> Organic</li>
+        <li><strong>Colour:</strong> Green and White</li>
+        <li><strong>Special Feature:</strong> Air Purifying</li>
+        <li><strong>Expected Growth Period:</strong> Year-round</li>
+        <li><strong>Item Weight:</strong> 400 Grams</li>
+        <li><strong>Sunlight Exposure:</strong> Low to Medium Light</li>
+        <li><strong>Net Quantity:</strong> 1.00 count</li>
+        <li class="highlight">Free Delivery</li>
+        <li class="highlight">Pay on Delivery</li>
+        <li class="highlight">Non-Returnable</li>
+        <li class="highlight">Top Brand</li>
+        <li class="highlight">Amazon Delivered</li>
+        <li class="highlight">Secure Transaction</li>
+      </ul>
+      <div class="price">$12.99</div>
+      <div class="buttons">
+        <button>Buy on Rent</button>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="pincode-checker">
+    <h3>Check Delivery Availability</h3>
+    <input type="text" id="pincode" placeholder="Enter Pincode">
+    <button onclick="checkPincode()">Check</button>
+    <div id="pincode-result"></div>
+  </div>
+
+  <footer>
+    © 2025 Nature's Touch. All Rights Reserved.
+  </footer>
+
+  <script>
+    const pincodeAvailability = {
+      "411001": "Shivajinagar - Available",
+      "411002": "Deccan - Available",
+      "411003": "Camp - Available",
+      "411004": "Kothrud - Not Available",
+      "411005": "Pimpri - Available",
+      "411006": "Baner - Not Available"
+    };
+
+    function checkPincode() {
+      const pincodeInput = document.getElementById("pincode").value.trim();
+      const resultDiv = document.getElementById("pincode-result");
+
+      if (pincodeAvailability[pincodeInput]) {
+        resultDiv.textContent = pincodeAvailability[pincodeInput];
+        resultDiv.style.color = pincodeAvailability[pincodeInput].includes("Available") ? "green" : "red";
+      } else {
+        resultDiv.textContent = "Pincode not found or invalid.";
+        resultDiv.style.color = "orange";
+      }
+    }
+  </script>
+</body>
+</html>
